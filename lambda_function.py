@@ -1,5 +1,7 @@
+import json
+
 def lambda_handler(event, context):
     return {
         "statusCode": 200,
-        "body": "CI/CD Pipeline Working!"
+        "body": json.dumps("CI/CD Pipeline Working and this is night 2:20")
     }
